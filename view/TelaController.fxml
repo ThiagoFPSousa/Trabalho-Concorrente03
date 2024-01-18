@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrincipalController">
+  <children>
+    <AnchorPane fx:id="anchorPaneInicial" prefHeight="400.0" prefWidth="600.0" visible="false">
+       <children>
+          <ImageView fx:id="imagemInicial" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../img/TelaInicial.png" />
+             </image>
+          </ImageView>
+          <Button fx:id="btnIniciar" layoutX="124.0" layoutY="215.0" mnemonicParsing="false" onAction="#CliqueEmIniciar" prefHeight="60.0" prefWidth="60.0" style="-fx-cursor: hand;" textFill="WHITE">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+             <effect>
+                <DropShadow />
+             </effect>
+             <graphic>
+                <ImageView fx:id="imagemPlay" fitHeight="41.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/Play.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+          </Button>
+       </children>
+    </AnchorPane>
+    <AnchorPane fx:id="anchorPaneJantar" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DDBE9F;" visible="false">
+       <children>
+          <ImageView fx:id="imagemJantarDasNacoes" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../img/Jantar%20das%20Nações.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemJantar" fitHeight="378.0" fitWidth="375.0" layoutX="115.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../img/TelaJantar.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="hashi0" fitHeight="70.0" fitWidth="50.0" layoutX="223.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" rotate="140.0">
+             <image>
+                <Image url="@../img/hashi4.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="hashi1" fitHeight="70.0" fitWidth="50.0" layoutX="321.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" rotate="-140.0">
+             <image>
+                <Image url="@../img/hashi4.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="hashi2" fitHeight="70.0" fitWidth="50.0" layoutX="345.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="-60.0">
+             <image>
+                <Image url="@../img/hashi4.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="hashi3" fitHeight="70.0" fitWidth="50.0" layoutX="275.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../img/hashi4.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="hashi4" fitHeight="70.0" fitWidth="50.0" layoutX="199.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="60.0">
+             <image>
+                <Image url="@../img/hashi4.png" />
+             </image>
+          </ImageView>
+          <Button fx:id="BtnReset" layoutX="275.0" layoutY="344.0" mnemonicParsing="false" onAction="#Resetar" prefHeight="30.0" prefWidth="30.0" style="-fx-cursor: hand;">
+             <effect>
+                <DropShadow />
+             </effect>
+             <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/resetar.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+          </Button>
+          <ImageView fx:id="imagemComidaAang" fitHeight="71.0" fitWidth="78.0" layoutX="267.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/comidaAang.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemPensamentoAang" fitHeight="51.0" fitWidth="71.0" layoutX="224.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/PensamentoAang.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="aangEsperando" fitHeight="30.0" fitWidth="38.0" layoutX="230.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Esperando.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemHashiUsandoAang" fitHeight="69.0" fitWidth="84.0" layoutX="282.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+             <image>
+                <Image url="@../img/hashiUsando.png" />
+             </image>
+          </ImageView>
+          <Label layoutX="353.0" layoutY="32.0" prefHeight="15.0" prefWidth="49.0" styleClass="custom-font-label" text="Pensando">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Label layoutX="353.0" layoutY="67.0" prefHeight="15.0" prefWidth="51.0" styleClass="custom-font-label" text="comendo">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Slider fx:id="sliderVelocidadePensando0" blockIncrement="1.0" layoutX="334.0" layoutY="38.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Slider fx:id="sliderVelocidadeComendo0" blockIncrement="1.0" layoutX="334.0" layoutY="72.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Button fx:id="BtnAang" disable="true" layoutX="404.0" layoutY="55.0" mnemonicParsing="false" onAction="#pausarAang" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+             <graphic>
+                <ImageView fx:id="imgBtnPauseAang" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/iconPause.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Button>
+          <ImageView fx:id="imagemComidaSokka" fitHeight="83.0" fitWidth="86.0" layoutX="343.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/comidaSokka.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemPensamentoSokka" fitHeight="51.0" fitWidth="71.0" layoutX="456.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/PensamentoSokka.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="sokkaEsperando" fitHeight="30.0" fitWidth="38.0" layoutX="464.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Esperando.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemHashiUsandoSokka" fitHeight="69.0" fitWidth="84.0" layoutX="357.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+             <image>
+                <Image url="@../img/hashiUsando.png" />
+             </image>
+          </ImageView>
+          <Label layoutX="488.0" layoutY="117.0" prefHeight="15.0" prefWidth="49.0" styleClass="custom-font-label" text="Pensando">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Label layoutX="488.0" layoutY="153.0" prefHeight="15.0" prefWidth="51.0" styleClass="custom-font-label" text="comendo">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Slider fx:id="sliderVelocidadePensando1" blockIncrement="1.0" layoutX="469.0" layoutY="124.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Slider fx:id="sliderVelocidadeComendo1" blockIncrement="1.0" layoutX="469.0" layoutY="158.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Button fx:id="BtnSokka" disable="true" layoutX="539.0" layoutY="141.0" mnemonicParsing="false" onAction="#pausarSokka" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+             <graphic>
+                <ImageView fx:id="imgBtnPauseSokka" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/iconPause.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Button>
+          <ImageView fx:id="imagemComidaZuko" fitHeight="51.0" fitWidth="60.0" layoutX="318.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/comidaZuko.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemPensamentoZuko" fitHeight="51.0" fitWidth="71.0" layoutX="416.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Pensamentozuko.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="zukoEsperando" fitHeight="30.0" fitWidth="38.0" layoutX="424.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Esperando.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemHashiUsandoZuko" fitHeight="69.0" fitWidth="84.0" layoutX="324.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+             <image>
+                <Image url="@../img/hashiUsando.png" />
+             </image>
+          </ImageView>
+          <Label layoutX="448.0" layoutY="314.0" prefHeight="15.0" prefWidth="49.0" styleClass="custom-font-label" text="Pensando">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Label layoutX="448.0" layoutY="349.0" prefHeight="15.0" prefWidth="51.0" styleClass="custom-font-label" text="comendo">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Slider fx:id="sliderVelocidadePensando2" blockIncrement="1.0" layoutX="429.0" layoutY="320.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Slider fx:id="sliderVelocidadeComendo2" blockIncrement="1.0" layoutX="429.0" layoutY="354.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+             </cursor>
+          </Slider>
+          <Button fx:id="BtnZuko" disable="true" layoutX="501.0" layoutY="337.0" mnemonicParsing="false" onAction="#pausarZuko" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+             <graphic>
+                <ImageView fx:id="imgBtnPauseZuko" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/iconPause.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Button>
+          <ImageView fx:id="imagemComidaToph" fitHeight="83.0" fitWidth="90.0" layoutX="216.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/comidaToph.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemPensamentoToph" fitHeight="51.0" fitWidth="71.0" layoutX="129.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/PensamentoToph.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="tophEsperando" fitHeight="30.0" fitWidth="38.0" layoutX="137.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Esperando.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemHashiUsandoToph" fitHeight="69.0" fitWidth="84.0" layoutX="232.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+             <image>
+                <Image url="@../img/hashiUsando.png" />
+             </image>
+          </ImageView>
+          <Label layoutX="122.0" layoutY="314.0" prefHeight="15.0" prefWidth="49.0" styleClass="custom-font-label" text="Pensando">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Label layoutX="122.0" layoutY="349.0" prefHeight="15.0" prefWidth="51.0" styleClass="custom-font-label" text="comendo">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Slider fx:id="sliderVelocidadePensando3" blockIncrement="1.0" layoutX="103.0" layoutY="320.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Slider fx:id="sliderVelocidadeComendo3" blockIncrement="1.0" layoutX="103.0" layoutY="354.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Button fx:id="BtnToph" disable="true" layoutX="48.0" layoutY="337.0" mnemonicParsing="false" onAction="#pausarToph" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+             <graphic>
+                <ImageView fx:id="imgBtnPauseToph" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/iconPause.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Button>
+          <ImageView fx:id="imagemComidaKatara" fitHeight="51.0" fitWidth="38.0" layoutX="208.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/comidaKatara.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemPensamentoKatara" fitHeight="51.0" fitWidth="71.0" layoutX="90.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/PensamentoKatara.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="kataraEsperando" fitHeight="30.0" fitWidth="38.0" layoutX="98.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+             <image>
+                <Image url="@../img/Esperando.png" />
+             </image>
+          </ImageView>
+          <ImageView fx:id="imagemHashiUsandoKatara" fitHeight="69.0" fitWidth="84.0" layoutX="203.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" rotate="45.0" visible="false">
+             <image>
+                <Image url="@../img/hashiUsando.png" />
+             </image>
+          </ImageView>
+          <Label layoutX="73.0" layoutY="117.0" prefHeight="15.0" prefWidth="49.0" styleClass="custom-font-label" text="Pensando">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Label layoutX="73.0" layoutY="153.0" prefHeight="15.0" prefWidth="51.0" styleClass="custom-font-label" text="comendo">
+             <font>
+                <Font size="10.0" />
+             </font>
+             <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="1.0">
+                   <stops>
+                      <Stop color="BLACK" />
+                      <Stop color="WHITE" offset="1.0" />
+                   </stops>
+                </LinearGradient>
+             </textFill>
+          </Label>
+          <Slider fx:id="sliderVelocidadePensando4" blockIncrement="1.0" layoutX="54.0" layoutY="124.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Slider fx:id="sliderVelocidadeComendo4" blockIncrement="1.0" layoutX="54.0" layoutY="158.0" max="25.0" min="1.0" prefHeight="40.0" prefWidth="72.0" style="-fx-cursor: hand;">
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Slider>
+          <Button fx:id="BtnKatara" disable="true" layoutY="141.0" mnemonicParsing="false" onAction="#pausarKatara" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+             <graphic>
+                <ImageView fx:id="imgBtnPauseKatara" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@../img/iconPause.png" />
+                   </image>
+                </ImageView>
+             </graphic>
+             <cursor>
+                <Cursor fx:constant="HAND" />
+             </cursor>
+          </Button>
+       </children>
+    </AnchorPane>
+      <Button fx:id="btnSom" layoutX="503.0" layoutY="14.0" mnemonicParsing="false" onAction="#som" prefHeight="30.0" prefWidth="25.0" style="-fx-cursor: hand;">
+         <graphic>
+            <ImageView fx:id="imgBtnSom" fitHeight="19.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/desmudo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+  </children>
+</AnchorPane>
